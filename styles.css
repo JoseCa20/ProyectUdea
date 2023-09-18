@@ -1,1 +1,24 @@
+/*
+font-family: 'Croissant One', cursive;
+font-family: 'Fuggles', cursive;
+font-family: 'Satisfy', cursive;
+*/
 
+span{
+    font-family: 'Croissant One', 'Helvetica', 'Arial';
+    font-size: 30px;
+    color: red;
+    font: bold;
+}
+
+.navbar-brand{
+    font-family: 'Croissant One', 'Helvetica', 'Arial';
+}
+
+.container{
+    background-color: white;
+}
+
+body{
+    background-color:  #482496;
+}
