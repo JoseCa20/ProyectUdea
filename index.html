@@ -16,67 +16,68 @@
     <title>Cerveza2</title>
   </head>
   <body>   
-    <nav class="navbar navbar-expand-lg bg-black sticky-top">
-      <div class="container-fluid row">
-        <div class="col-8 ms-5">
-          <a class="navbar-brand text-white" href="./index.html">
-            <img src="./img/Logo.png" alt="Bootstrap" width="80" height="80"> Cerveza<span>2</span>
-          </a> 
-        </div>       
-        <div class="collapse navbar-collapse col-auto" id="navbarSupportedContent">
-          <ul class="navbar-nav col-auto ms-5 gap-5">            
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Contáctanos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">¿Quienes Somos?</a>
-            </li>           
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light sticky-top">
+        <div class="container-fluid gap-3">         
+          <div class="d-inline">
+            <a class="nav-link">Servicio al cliente (+57) 310 123 456</a>
+            <a class="nav-link"><img src="./img/mail_FILL0_wght400_GRAD0_opsz24.png" alt="mail"> servicio.cliente@gmail.com</a> 
+          </div>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar Producto" aria-label="Buscar">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end gap-3" id="navbarSupportedContent"> 
+            <button type="button" class="btn btn-outline-info"><img src="./img/person.svg" id="logo_user" alt="user" height="20"> Inicio Sesión</button>
+            <button type="button" class="btn btn-outline-info">Registrarse</button>
+          </div>   
         </div>
-      </div>
-    </nav>    
+      </nav>
 
-    <div class="container mt-3">
-      <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active mt-2 mb-2">
-            <img src="./img/corona.png" class="d-block h-100" alt="...">
-          </div>
-          <div class="carousel-item mt-3 mb-3">
-            <img src="./img/stellaArtois2.png" class="d-block h-100" alt="...">
-          </div>
-          <div class="carousel-item mt-3 mb-3">
-            <img src="./img/budwe.jpg" class="d-block h-100" alt="...">
+      <nav class="navbar navbar-expand-lg bg-black sticky-top">
+        <div class="container-fluid">          
+          <a class="navbar-brand text-white ms-5" href="#">
+            <img src="./img/Logo.png" alt="Logo" width="80" height="80" class="d-inline-block align-text-center">
+            Cerveza<span>2</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse gap-5 justify-content-end" id="navbarSupportedContent"> 
+            <a class="nav-item" href="#">Home</a>
+            <a class="nav-item" href="#">Contáctenos</a>
+            <a class="nav-item" href="#">¿Quienes Somos?</a>                       
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden"></span>
-        </button>
-      </div>
-    <div class="container mt-5">
-      <main class="">
-        <p>Somos una apasionada comercializadora de cerveza que se enorgullece de ofrecer una cuidadosa selección de las mejores cervezas artesanales de todo el mundo. Nuestra historia comenzó hace 25 años, cuando un grupo de amigos amantes de la cerveza decidió compartir su entusiasmo por esta bebida única con la comunidad. Desde entonces, hemos crecido y evolucionado, pero nuestra pasión por la cerveza sigue siendo el corazón de lo que hacemos.
-          Nuestra misión es simple: brindar a nuestros clientes acceso a una variedad excepcional de alta calidad que reflejen la diversidad de estilos y sabores que el mundo de la cerveza tiene para ofrecer. Trabajamos estrechamente con cervecerías nacionales y apoyamos a la comunidad cervecera global.
-          En CERVEZA2, nos enorgullece ofrecer una experiencia única para los amantes de la cerveza. Nuestro equipo está formado por expertos apasionados por la cerveza, y estamos comprometidos en proporcionar un servicio excepcional a nuestros clientes. Ya sea que estés buscando una cerveza única para disfrutar en casa o quieras explorar nuevas cervezas en nuestro acogedor bar, estamos aquí para ofrecerte la mejor experiencia cervecera.
-          
-          A lo largo de los años, hemos construido relaciones sólidas con cervecerías de renombre y hemos aprendido mucho sobre la industria cervecera. Estamos comprometidos con la calidad, la autenticidad y la sostenibilidad en todo lo que hacemos. Esperamos seguir compartiendo nuestra pasión por la cerveza contigo y con la comunidad cervecera.
-          
-          Gracias por ser parte de la historia de CERVEZA2. ¡Salud!"
-          
-          Esta declaración refleja la pasión, la historia y la misión de la comercializadora de cerveza, y puede adaptarse y personalizarse según la identidad y los valores específicos de tu empresa.
-        </p>
-      </main>
-    </div>  
+      </nav>
+    </header>
+    <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
+      <aside>
+        <div class="d-flex align-items-start">
+          <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
+            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
+            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled>Disabled</button>
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+          </div>
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">...</div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
+            <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">...</div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+          </div>
+        </div>
+      </aside>
     </div>
+
+    <footer>
+      
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
