@@ -17,10 +17,10 @@
   </head>
   <body>   
     <header>
-      <nav class="navbar navbar-expand-lg bg-light sticky-top">
-        <div class="container-fluid gap-3">         
+      <nav class="navbar navbar-expand-lg bg-light sticky-top d-flex">
+        <div class="container-fluid gap-3 d-flex">         
           <div class="d-inline">
-            <a class="nav-link">Servicio al cliente (+57) 310 123 456</a>
+            <a class="nav-link"><img src="./img/call_FILL0_wght400_GRAD0_opsz24.png" alt="phone"> (+57) 310 123 4567</a>
             <a class="nav-link"><img src="./img/mail_FILL0_wght400_GRAD0_opsz24.png" alt="mail"> servicio.cliente@gmail.com</a> 
           </div>
           <form class="d-flex" role="search">
@@ -30,14 +30,15 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end gap-3" id="navbarSupportedContent"> 
-            <button type="button" class="btn btn-outline-info"><img src="./img/person.svg" id="logo_user" alt="user" height="20"> Inicio Sesión</button>
-            <button type="button" class="btn btn-outline-info">Registrarse</button>
-          </div>   
+          <div class="collapse navbar-collapse gap-5 justify-content-end" id="navbarSupportedContent"> 
+            <a class="nav-item" href="#">Home</a>
+            <a class="nav-item" href="#">Contáctenos</a>
+            <a class="nav-item" href="#">¿Quienes Somos?</a>                       
+          </div>
         </div>
       </nav>
 
-      <nav class="navbar navbar-expand-lg bg-black sticky-top">
+      <nav class="navbar navbar-expand-lg bg-black sticky-top d-flex">
         <div class="container-fluid">          
           <a class="navbar-brand text-white ms-5" href="#">
             <img src="./img/Logo.png" alt="Logo" width="80" height="80" class="d-inline-block align-text-center">
@@ -46,33 +47,75 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse gap-5 justify-content-end" id="navbarSupportedContent"> 
-            <a class="nav-item" href="#">Home</a>
-            <a class="nav-item" href="#">Contáctenos</a>
-            <a class="nav-item" href="#">¿Quienes Somos?</a>                       
-          </div>
+          
+          <div class="collapse navbar-collapse justify-content-end gap-3" id="navbarSupportedContent"> 
+            <button type="button" class="btn btn-info"><img src="./img/person.svg" id="logo_user" alt="user" height="20"> Inicio Sesión</button>
+            <button type="button" class="btn btn-info">Registrarse</button>
+          </div> 
         </div>
       </nav>
     </header>
-    <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
-      <aside>
-        <div class="d-flex align-items-start">
-          <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
-            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
-            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled>Disabled</button>
-            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
-            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
-          </div>
-          <div class="tab-content" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">...</div>
-            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
-            <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">...</div>
-            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
-            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
-          </div>
-        </div>
-      </aside>
+    <div class="container-xxl mt-3 my-md-4 bd-layout">      
+      <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 250px;">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"></a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">
+              <img src="./img/icons8-casa-30.png" alt="home">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <img src="./img/icons8-usuario-de-género-neutro-30.png" alt="">
+              Cuenta
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <img src="./img/icons8-cerveza-30.png" alt="">
+              Cervezas
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <img src="./img/icons8-whisky-30.png" alt="">
+              Licores
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <img src="./img/icons8-cigarettes-pack-30.png" alt="">
+              Cigarrillos
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <img src="./img/icons8-reajuste-salarial-30.png" alt="">
+              Gaseosas
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <img src="./img/icons8-ventas-totales-30.png" alt="">
+              Ventas
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <img src="./img/icons8-caja-llena-30.png" alt="">
+              Inventario
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <img src="./img/icons8-ajustes-30.png" alt="">
+              Configuración
+            </a>
+          </li>
+
+        </ul>
     </div>
 
     <footer>
