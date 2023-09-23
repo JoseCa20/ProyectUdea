@@ -19,3 +19,14 @@ body{
     background-color:  #482496;
 }
 
+.card-text{
+    color: red;
+}
+
+#uno{
+    color: yellow;
+}
+
+#dos{
+    color: blue;
+}
