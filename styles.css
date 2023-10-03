@@ -30,3 +30,13 @@ body{
 #dos{
     color: blue;
 }
+
+#disminuir, #aumentar{
+    border: 1px solid #ee3124;
+    border-radius: 5px;
+    width: 40%;
+}
+
+.btn-hover:hover{
+    background-color: #a81410 !important;
+}
