@@ -31,7 +31,7 @@ body{
     color: blue;
 }
 
-#disminuir, #aumentar{
+#decrease, #increase{
     border: 1px solid #ee3124;
     border-radius: 5px;
     width: 40%;
@@ -39,4 +39,9 @@ body{
 
 .btn-hover:hover{
     background-color: #a81410 !important;
+}
+
+#total{
+    font-size: 30px;
+    color: red;
 }
