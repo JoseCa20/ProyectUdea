@@ -112,60 +112,9 @@
           </li>          
         </ul>
       </div>
-      <div class="d-grid col-9 ms-5">
-        <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
-          <div class="col">
-            <div class="card">
-              <img src="./img/coronita.png" class="card-img-top"
-                alt="Hollywood Sign on The Hill" />
-              <div class="card-body">
-                <h5 class="card-title">Coronita 210 mL x6 un</h5>
-                <p class="card-text">
-                  $15.490
-                </p>
-                <button type="button" class="btn btn-success btn-rounded">Agregar</button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="./img/budweiser.png" class="card-img-top"
-                alt="Palm Springs Road" />
-              <div class="card-body">
-                <h5 class="card-title">Budweiser 250 mL x6 un</h5>
-                <p class="card-text">
-                  $12.990
-                </p>
-                <button type="button" class="btn btn-success btn-rounded">Agregar</button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="./img/stellaArtois.png" class="card-img-top"
-                alt="Los Angeles Skyscrapers" />
-              <div class="card-body">
-                <h5 class="card-title">Stella Artois 355 mL x6 un</h5>
-                <p class="card-text">
-                  $27.990
-                </p>
-                <button type="button" class="btn btn-success btn-rounded">Agregar</button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="./img/heineken.png" class="card-img-top"
-                alt="Skyscrapers" />
-              <div class="card-body">
-                <h5 class="card-title">Heineken 250 mL x6 un</h5>
-                <p class="card-text">
-                  $14.490
-                </p>
-                <button type="button" class="btn btn-success btn-rounded">Agregar</button>
-              </div>
-            </div>
-          </div>
+      <div class="d-grid col-9 col-md-9 ms-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4 text-center" id="listaProductos"> 
+
         </div>
       </div>    
       <div class="offcanvas offcanvas-end px-0 w-50" id="carrito">
@@ -185,8 +134,8 @@
               </tr>
             </thead>
             <tbody class="text-center" id="tbodyCarrito">
-              <tr>
-                <td>
+               <tr >
+                <!--<td>
                   <div class="d-flex justify-content-center">
                     <img
                         src="./img/budweiser.png"
@@ -217,12 +166,12 @@
                   <div class="imagen">
                     <img src="./img/biggarbagebin_121980.png" alt="eliminarProducto">
                   </div>
-                </td>
-              </tr>             
+                </td>-->
+              </tr>              
             </tbody>
           </table> 
           <div class="mt-3 d-flex justify-content-end">
-            <p id="total"></p>
+            <p id="total">Total</p>
           </div>
           <div class="mt-5 d-flex justify-content-center">
             <button class="btn btn-danger" data-bs-dismiss="offcanvas"> << VOLVER A LA TIENDA</button>
