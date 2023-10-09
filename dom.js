@@ -174,28 +174,26 @@ function increaseAmount(e){
 }
 
 function decreaseAmount(e){
-    let increase = e.target;
-    let tr = increase.closest(".itemCarrito");
+    let decrease = e.target;
+    let tr = decrease.closest(".itemCarrito");
     let nombre = tr.querySelector(".h6").textContent;
+    let cant = tr.querySelector(".amount").textContent;
     listaCarrito.forEach(item => {
-        if(item.cantidad > 1){
-            item.cantidad --;
-            renderCarrito();
-            totalCarrito(); 
-        }             
+        if(item.nombre.trim() === nombre.trim()){
+            if(cant >= 1){
+                item.cantidad --;
+                renderCarrito();
+                totalCarrito();
+            }else{
+                eliminarProducto();
+                totalCarrito();
+            }
+        }            
     });
 }
 
 
-buttomDecrease.addEventListener("click", () => {
-    if(amountInitial>1){
-        amountInitial -= 1;
-        updateAmount();        
-    }else{
-        tbody.innerHTML = "";
-        p.innerHTML = "";
-    }
-});
+
 
 
 

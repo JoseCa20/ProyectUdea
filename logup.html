@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Fuggles&family=Satisfy&display=swap" rel="stylesheet">
+    <script src="./validation.js" defer></script>
     <title>Cerveza2</title>
   </head>
   <body>   
@@ -56,7 +57,7 @@
       </nav>
     </header>
     <div class="container-xxl mt-3 my-md-4 ms-1 bg-light-subtle">      
-      <form >
+      <form id="formulario">
         <div class="row mb-3 col-12 d-grid justify-content-center">            
   
           <div class="d-flex justify-content-center gap-3 mt-2 ms-2 me-2">
@@ -77,7 +78,7 @@
           
           <div class="d-inline justify-content-center gap-3 mt-2 ms-2 me-2">
             <input type="text" id="numeroCelular" class="form-control" placeholder="Télefono o celular"/>
-            <label for="numeroCelular">Ingresa el numero sin símbolos ni espacios</label>
+            <label for="numeroCelular"></label>
           </div>
 
           <div class="d-inline text-center gap-3 mt-2 ms-2 me-2">
@@ -93,7 +94,7 @@
           <div class="d-flex gap-3 mt-2 ms-2 me-2">
             <div class="col-5">
               <input type="text" id="contrasena" class="form-control" placeholder="contraseña"/>    
-              <label for="contrasena">Mínimo 6 caracteres</label> 
+              <label for="contrasena" id="labelContrasena" class="text-danger"></label> 
             </div>
             <div class="col-5 ms-auto">
               <input type="text" id="confirmarcontrasena" class="form-control" placeholder="confirmar contraseña"/>
@@ -108,6 +109,7 @@
             </label>
         </div>  
         <button type="submit" class="btn btn-primary w-100 mb-3">CREAR CUENTA</button>
+        <p class="alertas text-center text-danger" id="alertas"></p>
       </form>
     </div>
 
