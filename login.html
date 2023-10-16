@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Fuggles&family=Satisfy&display=swap" rel="stylesheet">
+    <script src="./validationLogin.js" defer></script>
     <title>Cerveza2</title>
   </head>
   <body>   
@@ -47,17 +48,21 @@
                 class="img-thumbnail h-100 w-100" alt="Phone image">
             </div>
             <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
-              <form>
+              <form class="formLogin">
                 <!-- Email input -->
                 <div class="form-outline mb-4">
-                  <input type="email" id="form1Example13" class="form-control form-control-lg"/>
-                  <label class="form-label" for="form1Example13">correo electrónico</label>
+                  <input type="email" id="emailLogin" class="form-control form-control-lg" required/>
+                  <label class="form-label" for="emailLogin">Correo electrónico</label>
                 </div>
       
                 <!-- Password input -->
                 <div class="form-outline mb-4">
-                  <input type="password" id="form1Example23" class="form-control form-control-lg" />
-                  <label class="form-label" for="form1Example23">Contraseña</label>
+                  <input type="password" id="passwordLogin" class="form-control form-control-lg" required/>
+                  <label class="form-label" for="passwordLogin">Contraseña</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <p class="text-danger" id="responseValidation"></p>
                 </div>
       
                 <div class="d-flex justify-content-around align-items-center mb-4">

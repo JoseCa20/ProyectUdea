@@ -61,8 +61,8 @@
         <div class="row mb-3 col-12 d-grid justify-content-center">            
   
           <div class="d-flex justify-content-center gap-3 mt-2 ms-2 me-2">
-            <input type="text" id="nombres" class="form-control" placeholder="Nombres"/>
-            <input type="text" id="apellidos" class="form-control" placeholder="Apellidos"/>
+            <input type="text" id="nombres" class="form-control" placeholder="Nombres" required/>
+            <input type="text" id="apellidos" class="form-control" placeholder="Apellidos" required/>
           </div>
 
           <div class="d-flex justify-content-center gap-3 mt-2 ms-2 me-2">
@@ -73,11 +73,11 @@
               <option value="3">NIT</option>
               <option value="4">Pasaporte</option>
             </select>
-            <input type="text" id="numeroDocumento" class="form-control" placeholder="N° documento"/>
+            <input type="text" id="numeroDocumento" class="form-control" placeholder="N° documento" required/>
           </div>      
           
           <div class="d-inline justify-content-center gap-3 mt-2 ms-2 me-2">
-            <input type="text" id="numeroCelular" class="form-control" placeholder="Télefono o celular"/>
+            <input type="text" id="numeroCelular" class="form-control" placeholder="Télefono o celular" required/>
             <label for="numeroCelular"></label>
           </div>
 
@@ -88,16 +88,16 @@
           </div>
 
           <div class="d-inline justify-content-center gap-3 mt-2 ms-2 me-2">
-            <input type="text" id="mail" class="form-control" placeholder="Correo electrónico"/>            
+            <input type="text" id="mail" class="form-control" placeholder="Correo electrónico" required/>            
           </div>
           
           <div class="d-flex gap-3 mt-2 ms-2 me-2">
             <div class="col-5">
-              <input type="text" id="contrasena" class="form-control" placeholder="contraseña"/>    
-              <label for="contrasena" id="labelContrasena" class="text-danger"></label> 
+              <input type="password" id="contrasena" class="form-control" placeholder="contraseña" required/>    
+              <label for="contrasena" id="labelContrasena" class="text-danger text-center"></label> 
             </div>
             <div class="col-5 ms-auto">
-              <input type="text" id="confirmarcontrasena" class="form-control" placeholder="confirmar contraseña"/>
+              <input type="password" id="confirmarcontrasena" class="form-control" placeholder="confirmar contraseña" required/>
             </div>
           </div>
           

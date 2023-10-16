@@ -32,7 +32,8 @@ form.addEventListener("submit", e => {
     if(entrar){
         labelContrasena.innerHTML = alertas;
     }else{
-        p.innerHTML = "Datos enviados con éxito!";
+        labelContrasena.innerHTML = "";
+        p.innerHTML = "Registro exitoso!";
     }
 })
 
